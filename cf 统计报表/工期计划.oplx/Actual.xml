@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="iYHGJLxTjaP">
+  <start-date>2014-08-11T01:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>&gt;任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>&gt;里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>资源 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t58"/>
+  </task>
+  <task id="t1">
+    <title>统计功能</title>
+    <type>group</type>
+    <child-task idref="t3"/>
+    <child-task idref="t2"/>
+    <child-task idref="t24"/>
+    <child-task idref="t28"/>
+    <child-task idref="t32"/>
+    <child-task idref="t43"/>
+    <style>
+      <value key="font-size">13</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t2">
+    <title>搜索功能</title>
+    <type>group</type>
+    <child-task idref="t11"/>
+    <child-task idref="t13"/>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>包含月、年静态数据，不包含日更新静态数据</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <style>
+      <value key="font-size">13</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t3">
+    <title>搜索项功能</title>
+    <type>group</type>
+    <child-task idref="t5"/>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+    <style>
+      <value key="font-size">13</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t5">
+    <title>开发设计</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">13</value>
+    </style>
+  </task>
+  <task id="t9">
+    <title>开发阶段（前后端）</title>
+    <effort>230400</effort>
+    <style>
+      <value key="font-size">13</value>
+    </style>
+    <prerequisite-task idref="t5"/>
+  </task>
+  <task id="t10">
+    <title>单元测试</title>
+    <effort>86400</effort>
+    <style>
+      <value key="font-size">13</value>
+    </style>
+    <prerequisite-task idref="t9"/>
+  </task>
+  <task id="t11">
+    <title>开发设计</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t13">
+    <title>数据库设计</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t11"/>
+  </task>
+  <task id="t14">
+    <title>开发阶段（后端）</title>
+    <type>group</type>
+    <child-task idref="t16"/>
+    <child-task idref="t18"/>
+    <child-task idref="t63"/>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t13"/>
+  </task>
+  <task id="t15">
+    <title>单元测试</title>
+    <effort>86400</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t14"/>
+  </task>
+  <task id="t16">
+    <title>接口定义</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t18">
+    <title>接口实现</title>
+    <effort>115200</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t16"/>
+  </task>
+  <task id="t24">
+    <title>导出打印功能</title>
+    <type>group</type>
+    <child-task idref="t25"/>
+    <child-task idref="t26"/>
+    <child-task idref="t27"/>
+    <style>
+      <value key="font-size">14</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t25">
+    <title>开发设计</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t26">
+    <title>开发阶段（前后端）</title>
+    <effort>115200</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t25"/>
+  </task>
+  <task id="t27">
+    <title>单元测试</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t26"/>
+  </task>
+  <task id="t28">
+    <title>排序功能</title>
+    <type>group</type>
+    <child-task idref="t30"/>
+    <style>
+      <value key="font-size">14</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t30">
+    <title>开发阶段（前端）</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t32">
+    <title>总计功能</title>
+    <type>group</type>
+    <child-task idref="t35"/>
+    <child-task idref="t36"/>
+    <child-task idref="t41"/>
+    <style>
+      <value key="font-size">14</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t35">
+    <title>开发设计</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t36">
+    <title>开发阶段（前后端）</title>
+    <type>group</type>
+    <child-task idref="t37"/>
+    <child-task idref="t38"/>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t35"/>
+  </task>
+  <task id="t37">
+    <title>接口定义</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t38">
+    <title>接口实现</title>
+    <effort>86400</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t37"/>
+  </task>
+  <task id="t41">
+    <title>单元测试</title>
+    <effort>86400</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t36"/>
+  </task>
+  <task id="t43">
+    <title>统计规则提示</title>
+    <effort>57600</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t47">
+    <title>中心管理员配置</title>
+    <type>group</type>
+    <child-task idref="t48"/>
+    <child-task idref="t49"/>
+    <child-task idref="t53"/>
+    <child-task idref="t54"/>
+    <style>
+      <value key="font-size">13</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t48">
+    <title>开发设计</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t49">
+    <title>数据库设计</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t48"/>
+  </task>
+  <task id="t53">
+    <title>开发阶段（前后端）</title>
+    <effort>86400</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t49"/>
+  </task>
+  <task id="t54">
+    <title>单元测试</title>
+    <effort>28800</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t53"/>
+  </task>
+  <task id="t56">
+    <title>项目框架搭建</title>
+    <effort>57600</effort>
+    <style>
+      <value key="font-size">13</value>
+    </style>
+  </task>
+  <task id="t58">
+    <title>项目周期计划</title>
+    <type>group</type>
+    <child-task idref="t56"/>
+    <child-task idref="t60"/>
+    <child-task idref="t47"/>
+    <child-task idref="t1"/>
+    <child-task idref="t62"/>
+    <style>
+      <value key="font-size">13</value>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t60">
+    <title>概要设计</title>
+    <effort>57600</effort>
+    <style>
+      <value key="font-size">13</value>
+    </style>
+  </task>
+  <task id="t62">
+    <title>与美工整合页面</title>
+    <effort>86400</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+  </task>
+  <task id="t63">
+    <title>生成月年静态数据</title>
+    <effort>115200</effort>
+    <style>
+      <value key="font-size">14</value>
+    </style>
+    <prerequisite-task idref="t18"/>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
